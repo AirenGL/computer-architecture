@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Представление чисел, текста и других данных — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-2:311783d9ebea" data-previous-test-key="arch-test:base-2:06c4c17ab057">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/02.html">К лекции</a>
+  <h1>Тест. Представление чисел, текста и других данных</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Каково беззнаковое значение 1011₂?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">11</button><button class="btn" type="button" data-choice="1">9</button><button class="btn" type="button" data-choice="2">13</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Сколько значений можно представить четырьмя битами?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">8</button><button class="btn" type="button" data-choice="1">16</button><button class="btn" type="button" data-choice="2">15</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что означает 1111₂ в четырёхбитном дополнительном коде?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">−8</button><button class="btn" type="button" data-choice="1">15</button><button class="btn" type="button" data-choice="2">−1</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Какой байт 0x1234 лежит по меньшему адресу в little-endian?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">0x34</button><button class="btn" type="button" data-choice="1">0x12</button><button class="btn" type="button" data-choice="2">0x00</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что даёт AND для 1101₂ и 0011₂?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">1111₂</button><button class="btn" type="button" data-choice="1">0001₂</button><button class="btn" type="button" data-choice="2">1110₂</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Почему 0,1 обычно округляется в двоичном формате?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">В двоичной системе нет дробей</button><button class="btn" type="button" data-choice="1">Дробь занимает ровно один бит</button><button class="btn" type="button" data-choice="2">Его двоичная дробь бесконечна</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Полная сумма равна 260. Младшие восемь бит представляют остаток от деления на 256." hidden>
+     <h2 tabindex="-1">Сложили два беззнаковых восьмибитных числа 250 и 10. Какой результат останется в восьми битах?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">4</button><button class="btn" type="button" data-choice="1">260</button><button class="btn" type="button" data-choice="2">255</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Единицы стоят в позициях с весами 1/2 и 1/8." hidden>
+     <h2 tabindex="-1">Чему равно 0,101₂?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">0,101</button><button class="btn" type="button" data-choice="1">0,625</button><button class="btn" type="button" data-choice="2">0,75</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="При сбросе бита остальные позиции сохраняются. Это можно сделать через AND с маской 11101111." hidden>
+     <h2 tabindex="-1">В поле 10110000 нужно сбросить только бит с весом 16. Какой результат нужен?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">10110001</button><button class="btn" type="button" data-choice="1">11110000</button><button class="btn" type="button" data-choice="2">10100000</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/02.html">К лекции</a>
+   <a class="btn" href="../lessons/03.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

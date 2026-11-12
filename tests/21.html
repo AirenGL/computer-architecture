@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Виртуальная машина, её сеть, снимки и восстановление — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-16:358b11e3637d" data-previous-test-key="arch-test:base-16:e574f019d667">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/21.html">К лекции</a>
+  <h1>Тест. Виртуальная машина, её сеть, снимки и восстановление</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Как проверить, что гость загружается с установленной ОС?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Отключить установочный образ и перезапустить гостя</button><button class="btn" type="button" data-choice="1">Открыть установщик повторно</button><button class="btn" type="button" data-choice="2">Удалить виртуальный диск</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Какой режим обычно подходит гостю для исходящих соединений через хост?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Изолированная внутренняя сеть без маршрута</button><button class="btn" type="button" data-choice="1">NAT</button><button class="btn" type="button" data-choice="2">Только хост без маршрута</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Какой режим даёт гостю участие в общей локальной сети как отдельному узлу?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Внутренняя сеть</button><button class="btn" type="button" data-choice="1">Изолированный виртуальный адаптер</button><button class="btn" type="button" data-choice="2">Сетевой мост</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что проверяют после возврата к снимку?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Ожидаемое состояние системы и контрольных данных</button><button class="btn" type="button" data-choice="1">Только имя хоста</button><button class="btn" type="button" data-choice="2">Только тип сетевого адаптера</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что нужно при потере исходного виртуального диска?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только файл последних изменений</button><button class="btn" type="button" data-choice="1">Независимая полная копия с конфигурацией</button><button class="btn" type="button" data-choice="2">Только список снимков</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что подтверждает успешное восстановление?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Файл копии имеет ожидаемое имя</button><button class="btn" type="button" data-choice="1">Гипервизор показывает прежнее число машин</button><button class="btn" type="button" data-choice="2">Восстановленный экземпляр запускается и открывает нужные данные</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="В режиме «только хост» узлы хоста и гостя соединены отдельным виртуальным сегментом." hidden>
+     <h2 tabindex="-1">Нужно открыть учебный веб-сервис гостя только с компьютера-хоста. Какой режим подходит?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Сеть «только хост»</button><button class="btn" type="button" data-choice="1">Сетевой мост в общей локальной сети</button><button class="btn" type="button" data-choice="2">Внутренняя сеть, в которой участвуют только гости</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Снимки часто хранят изменения относительно родительского состояния." hidden>
+     <h2 tabindex="-1">После создания снимка потерян базовый образ виртуального диска. Почему одного снимка может не хватить?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Снимок всегда хранит все данные в независимом файле</button><button class="btn" type="button" data-choice="1">Образ изменений может зависеть от блоков базового диска</button><button class="btn" type="button" data-choice="2">Восстановление зависит только от имени снимка</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Динамический образ должен иметь возможность расти на физическом накопителе хоста." hidden>
+     <h2 tabindex="-1">Гость показывает 10 ГБ свободного места, но запись в динамический диск перестала работать. Что проверить?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только объём памяти гостя</button><button class="btn" type="button" data-choice="1">Только настройки DNS гостя</button><button class="btn" type="button" data-choice="2">Свободное место на хосте, где лежит образ диска</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/21.html">К лекции</a>
+   <a class="btn" href="../index.html#course">Программа курса</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

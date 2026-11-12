@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Система команд и первые программы на x86-64 — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-5:063532966d9e" data-previous-test-key="arch-test:base-5:b57f613dc651">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/05.html">К лекции</a>
+  <h1>Тест. Система команд и первые программы на x86-64</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что описывает ISA?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Команды и ресурсы, доступные машинной программе</button><button class="btn" type="button" data-choice="1">Расположение транзисторов на кристалле</button><button class="btn" type="button" data-choice="2">Формат пользовательских файлов</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что означает EAX в x86-64?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Независимый регистр на 64 бита</button><button class="btn" type="button" data-choice="1">Младшие 32 бита RAX</button><button class="btn" type="button" data-choice="2">Старшие 16 бит RAX</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что происходит со старшими 32 битами RAX при записи в EAX?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Всегда сохраняются</button><button class="btn" type="button" data-choice="1">Копируют знаковый бит EAX</button><button class="btn" type="button" data-choice="2">Обнуляются</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что делает mov eax, [rdx] в синтаксисе Intel?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Читает четыре байта из памяти по адресу RDX</button><button class="btn" type="button" data-choice="1">Копирует в EAX сам адрес RDX</button><button class="btn" type="button" data-choice="2">Записывает EAX в память</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Слова по четыре байта нумеруются с нуля, а память начинается с адреса 0. Каков адрес слова № 42?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">42</button><button class="btn" type="button" data-choice="1">168</button><button class="btn" type="button" data-choice="2">46</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Какая инструкция x86-64 вычисляет эффективный адрес без чтения данных по нему?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Обычная загрузка MOV из памяти</button><button class="btn" type="button" data-choice="1">POP</button><button class="btn" type="button" data-choice="2">LEA</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="AL занимает восемь младших бит. Остальные части RAX сохраняются." hidden>
+     <h2 tabindex="-1">RAX равен 0x1122334455667788. Каким станет RAX после записи 0x99 в AL?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">0x1122334455667799</button><button class="btn" type="button" data-choice="1">0x0000000000000099</button><button class="btn" type="button" data-choice="2">0x1122334455669988</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Эффективный адрес равен 1000 + 3 × 4 + 8." hidden>
+     <h2 tabindex="-1">RDX равен 1000, RSI равен 3. По какому адресу mov eax, [rdx+rsi*4+8] читает данные?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">1012</button><button class="btn" type="button" data-choice="1">1020</button><button class="btn" type="button" data-choice="2">1028</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="LEA использует правила адресации без чтения содержимого ячейки." hidden>
+     <h2 tabindex="-1">Чем отличаются lea rax, [rdx+8] и mov rax, [rdx+8]?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Обе читают по адресу RDX + 8</button><button class="btn" type="button" data-choice="1">Первая читает память, вторая вычисляет адрес</button><button class="btn" type="button" data-choice="2">Первая вычисляет адрес, вторая читает содержимое памяти</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/05.html">К лекции</a>
+   <a class="btn" href="../lessons/06.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

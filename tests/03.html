@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Логические элементы и цифровые схемы — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-3:45dc6620b72f" data-previous-test-key="arch-test:base-3:62fb646083bc">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/03.html">К лекции</a>
+  <h1>Тест. Логические элементы и цифровые схемы</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Когда И даёт единицу?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Оба входа равны единице</button><button class="btn" type="button" data-choice="1">Достаточно одного входа, равного единице</button><button class="btn" type="button" data-choice="2">Входы различаются</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Чему равен XOR для двух единиц?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">1</button><button class="btn" type="button" data-choice="1">0</button><button class="btn" type="button" data-choice="2">2</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Какие входы нужны полному сумматору?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Два бита слагаемых без переноса</button><button class="btn" type="button" data-choice="1">Один бит и тактовый сигнал</button><button class="btn" type="button" data-choice="2">Два бита слагаемых и входной перенос</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что выдаст полный сумматор для входов 1, 1 и 0?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Сумму 0, перенос 1</button><button class="btn" type="button" data-choice="1">Сумму 1, перенос 0</button><button class="btn" type="button" data-choice="2">Сумму 1, перенос 1</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что делает мультиплексор?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Складывает значения всех входов</button><button class="btn" type="button" data-choice="1">Выбирает один из входов по сигналу управления</button><button class="btn" type="button" data-choice="2">Хранит все входные данные</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что позволяет регистру хранить состояние между тактами?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только комбинационные вентили без памяти</button><button class="btn" type="button" data-choice="1">Постоянная подача новых данных</button><button class="btn" type="button" data-choice="2">Элементы памяти с управляемым обновлением</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="При 1 + 1 младший бит равен нулю, а перенос единице." hidden>
+     <h2 tabindex="-1">Как собрать полусумматор из двух вентилей?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">XOR для суммы и AND для переноса</button><button class="btn" type="button" data-choice="1">OR для суммы и XOR для переноса</button><button class="btn" type="button" data-choice="2">AND для суммы и OR для переноса</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Комбинационный выход меняется раньше, чем обновится состояние регистра." hidden>
+     <h2 tabindex="-1">Сумматор получил 3 и 1, на его выходе 4. Почему выход регистра ещё может показывать 3?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Сумматор не получил первый операнд</button><button class="btn" type="button" data-choice="1">Момент разрешённой записи ещё не наступил</button><button class="btn" type="button" data-choice="2">Регистр считывает выход сумматора непрерывно</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Два бита дают четыре комбинации, по одной на вход." hidden>
+     <h2 tabindex="-1">Для четырёх входов мультиплексора сколько нужно двоичных линий выбора?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Одну</button><button class="btn" type="button" data-choice="1">Четыре</button><button class="btn" type="button" data-choice="2">Две</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/03.html">К лекции</a>
+   <a class="btn" href="../lessons/04.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

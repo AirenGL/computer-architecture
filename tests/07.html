@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Переходы, циклы, функции и стек — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-6:a82c5bd11672" data-previous-test-key="arch-test:base-6:4abecaa4435d">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/07.html">К лекции</a>
+  <h1>Тест. Переходы, циклы, функции и стек</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Зачем программе условный переход?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Выбрать следующую команду по результату проверки</button><button class="btn" type="button" data-choice="1">Скопировать данные с диска в ОЗУ</button><button class="btn" type="button" data-choice="2">Удвоить число доступных регистров</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Какой последний допустимый индекс у массива из четырёх элементов?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">4</button><button class="btn" type="button" data-choice="1">3</button><button class="btn" type="button" data-choice="2">5</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что обычно происходит при вызове функции?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Удаляются все локальные данные вызывающей функции</button><button class="btn" type="button" data-choice="1">Счётчик команд обнуляется</button><button class="btn" type="button" data-choice="2">Сохраняется адрес возврата и передаётся управление</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Какой адрес снимается со стека первым при вложенных вызовах x86-64?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Адрес возврата последнего вызова</button><button class="btn" type="button" data-choice="1">Адрес возврата самого раннего вызова</button><button class="btn" type="button" data-choice="2">Адрес первого элемента массива</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Для чего нужно соглашение о вызовах?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Чтобы стек хранил только инструкции</button><button class="btn" type="button" data-choice="1">Чтобы стороны одинаково понимали, где аргументы и результат</button><button class="btn" type="button" data-choice="2">Чтобы каждая функция имела одинаковую длину</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Когда обращение к локальному объекту становится недопустимым?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только если указатель стал численно равен нулю</button><button class="btn" type="button" data-choice="1">Только после выключения компьютера</button><button class="btn" type="button" data-choice="2">Когда закончился срок его жизни</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Условие проверяется до обработки, поэтому при i = 4 цикл завершится." hidden>
+     <h2 tabindex="-1">Цикл начинается с i = 0 и работает, пока i &lt; 4. После каждого шага i увеличивается на 1. Какие индексы он обработает?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">0, 1, 2, 3</button><button class="btn" type="button" data-choice="1">0, 1, 2, 3, 4</button><button class="btn" type="button" data-choice="2">1, 2, 3, 4</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Последний сохранённый адрес возврата используется первым." hidden>
+     <h2 tabindex="-1">Функция A вызвала B, а B вызвала C. Каков порядок возвращения?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Из C в A, затем в B</button><button class="btn" type="button" data-choice="1">Из C в B, затем из B в A</button><button class="btn" type="button" data-choice="2">Из B в A, затем из C в B</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Смещение индекса 4 равно 16 байтам, то есть размеру всего массива." hidden>
+     <h2 tabindex="-1">Массив занимает четыре элемента по четыре байта. Что происходит при чтении элемента с индексом 4?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Читается последний элемент массива</button><button class="btn" type="button" data-choice="1">Читается первый байт последнего элемента</button><button class="btn" type="button" data-choice="2">Чтение начинается сразу за пределами массива</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/07.html">К лекции</a>
+   <a class="btn" href="../lessons/08.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

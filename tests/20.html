@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Виртуализация, гипервизоры и контейнеры — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-15:eee26d32650b" data-previous-test-key="arch-test:base-15:420fe6269dd3">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/20.html">К лекции</a>
+  <h1>Тест. Виртуализация, гипервизоры и контейнеры</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Кто управляет виртуальными машинами и ресурсами хоста?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Гипервизор</button><button class="btn" type="button" data-choice="1">Гостевой браузер</button><button class="btn" type="button" data-choice="2">Контроллер USB</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что видит гостевая ОС?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только программы хоста</button><button class="btn" type="button" data-choice="1">Свою виртуальную конфигурацию оборудования</button><button class="btn" type="button" data-choice="2">Только физические контакты платы</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Для чего нужна аппаратная виртуализация CPU?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Чтобы изменить машинный код другой ISA без трансляции</button><button class="btn" type="button" data-choice="1">Чтобы увеличить ёмкость SSD</button><button class="btn" type="button" data-choice="2">Чтобы безопасно выполнять гостевой код с контролем гипервизора</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что такое vCPU?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Виртуальный процессор гостя, которому выделяется физическое процессорное время</button><button class="btn" type="button" data-choice="1">Отдельный физический процессор у каждого гостя</button><button class="btn" type="button" data-choice="2">Модуль виртуальной оперативной памяти</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что разделяют контейнеры одной среды?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Все файлы и настройки приложений</button><button class="btn" type="button" data-choice="1">Ядро операционной системы среды</button><button class="btn" type="button" data-choice="2">Один экземпляр каждой пользовательской программы</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что учитывают при назначении ОЗУ гостям?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только максимум одного гостя</button><button class="btn" type="button" data-choice="1">Только размер установочного ISO</button><button class="btn" type="button" data-choice="2">Резерв памяти для хоста и других нагрузок</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Аппаратная поддержка виртуализации позволяет перехватывать определённые операции гостя." hidden>
+     <h2 tabindex="-1">Гостевая ОС пытается выполнить действие, требующее контроля гипервизора. Что происходит?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Управление передаётся гипервизору для обработки</button><button class="btn" type="button" data-choice="1">Гость получает исключительный доступ ко всему физическому компьютеру</button><button class="btn" type="button" data-choice="2">Действие всегда исполняется прямо в приложении хоста</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Настройка ОЗУ должна учитывать все активные нагрузки." hidden>
+     <h2 tabindex="-1">Хосту и двум гостям суммарно не хватает физической памяти. Что проверить первым?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только число виртуальных ядер</button><button class="btn" type="button" data-choice="1">Реальные потребности гостевых систем и запас для хоста</button><button class="btn" type="button" data-choice="2">Только максимальный размер каждого виртуального диска</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Виртуальная машина предоставляет гостю собственную цепочку загрузки и ядро." hidden>
+     <h2 tabindex="-1">Для учебной работы нужно установить ОС с собственным ядром и проверить её загрузчик. Что подходит?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Контейнер, использующий ядро среды</button><button class="btn" type="button" data-choice="1">Изолированная учётная запись в существующей ОС</button><button class="btn" type="button" data-choice="2">Виртуальная машина</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/20.html">К лекции</a>
+   <a class="btn" href="../lessons/21.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

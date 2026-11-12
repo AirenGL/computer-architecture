@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Многоядерные системы и графические ускорители — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-11:169e05be4925" data-previous-test-key="arch-test:base-11:d7369bcd115a">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/12.html">К лекции</a>
+  <h1>Тест. Многоядерные системы и графические ускорители</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Когда работа двух потоков действительно параллельна?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Два ядра одновременно выполняют команды этих потоков</button><button class="btn" type="button" data-choice="1">Одно ядро попеременно выполняет их команды</button><button class="btn" type="button" data-choice="2">Оба потока ожидают ввода</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что происходит при двух незащищённых обновлениях одного счётчика?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Счётчик обязательно увеличится на два</button><button class="btn" type="button" data-choice="1">Один вклад может потеряться</button><button class="btn" type="button" data-choice="2">Кэш автоматически выполнит атомарное сложение</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что обеспечивает атомарная операция?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Постоянное хранение результата на SSD</button><button class="btn" type="button" data-choice="1">Отключение остальных ядер</button><button class="btn" type="button" data-choice="2">Неделимость обновления с точки зрения других потоков</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что обеспечивает согласованность кэшей?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Согласование копий области памяти</button><button class="btn" type="button" data-choice="1">Атомарность любой последовательности команд</button><button class="btn" type="button" data-choice="2">Распределение задач между приложениями</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Какая задача подходит GPU?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Ожидание одного нажатия клавиши</button><button class="btn" type="button" data-choice="1">Одинаковая операция над множеством независимых пикселей</button><button class="btn" type="button" data-choice="2">Чтение версии системной прошивки</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что учитывают при переносе вычисления на дискретный GPU?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только число блоков GPU</button><button class="btn" type="button" data-choice="1">Только размер системного диска</button><button class="btn" type="button" data-choice="2">Время передачи данных и вычисления</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Каждая запись выполнилась, но между чтением и записью не было взаимного исключения." hidden>
+     <h2 tabindex="-1">Два потока прочитали счётчик 20, прибавили единицу и записали 21. Где потерялось обновление?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Оба вычислили новое значение из одной старой копии</button><button class="btn" type="button" data-choice="1">Один из потоков ошибся при сложении</button><button class="btn" type="button" data-choice="2">Второй поток не смог прочитать из-за согласованности кэшей</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Локальное накопление оставляет обмен только для этапа объединения." hidden>
+     <h2 tabindex="-1">Как сократить обращения к общему счётчику при обработке частей изображения?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Чаще перечитывать общий счётчик</button><button class="btn" type="button" data-choice="1">Накопить локальные суммы и объединить их после обработки</button><button class="btn" type="button" data-choice="2">Отключить кэш обоих потоков</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Сравнивать нужно полное время, включая обмен и запуск работы." hidden>
+     <h2 tabindex="-1">GPU считает быстрее, но маленькая задача на нём выполняется дольше. Почему?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Для маленьких задач GPU всегда отключает видеопамять</button><button class="btn" type="button" data-choice="1">Из-за более быстрого вычисления CPU получает меньше ядер</button><button class="btn" type="button" data-choice="2">Подготовка и копирование данных перевешивают выигрыш вычисления</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/12.html">К лекции</a>
+   <a class="btn" href="../lessons/13.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

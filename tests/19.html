@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Серверные системы, NUMA, RAID и резервирование — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:servers:d67c3907533e" data-previous-test-key="arch-test:servers:cbd9508da8fe">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/19.html">К лекции</a>
+  <h1>Тест. Серверные системы, NUMA, RAID и резервирование</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что означает NUMA?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Время доступа зависит от расположения памяти</button><button class="btn" type="button" data-choice="1">Все узлы всегда имеют одинаковое время доступа</button><button class="btn" type="button" data-choice="2">Виртуальные диски хранятся только в ОЗУ</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что произойдёт с доступом при переносе потока вдали от его памяти?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Все страницы автоматически станут локальными</button><button class="btn" type="button" data-choice="1">Часть обращений может стать медленнее</button><button class="btn" type="button" data-choice="2">У памяти исчезнут адреса</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Что даёт RAID 0?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Зеркальные копии всех блоков</button><button class="btn" type="button" data-choice="1">Восстановление удалённых файлов</button><button class="btn" type="button" data-choice="2">Распределение блоков между дисками без избыточности</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что хранит RAID 1?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Зеркальные копии данных</button><button class="btn" type="button" data-choice="1">Только блоки чётности</button><button class="btn" type="button" data-choice="2">Только служебные журналы</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что нужно для возврата случайно удалённого файла?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Любой исправный зеркальный диск</button><button class="btn" type="button" data-choice="1">Независимая резервная копия с нужной версией</button><button class="btn" type="button" data-choice="2">Дополнительное ядро CPU</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Как измеряют время восстановления сервиса?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">По интервалу между снимками</button><button class="btn" type="button" data-choice="1">По ёмкости массива</button><button class="btn" type="button" data-choice="2">От отказа до возвращения работоспособности</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Один и тот же набор блоков записывается на оба диска." hidden>
+     <h2 tabindex="-1">Два диска по 4 ТБ настроены как RAID 1. Сколько полезной ёмкости до служебных расходов?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Около 4 ТБ</button><button class="btn" type="button" data-choice="1">Около 8 ТБ</button><button class="btn" type="button" data-choice="2">Около 2 ТБ</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Интервал задаёт, насколько свежие данные можно вернуть после сбоя." hidden>
+     <h2 tabindex="-1">Какой интервал между успешными копиями выбрать, если допускается потерять не больше четырёх часов работы?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Не больше суток</button><button class="btn" type="button" data-choice="1">Не больше четырёх часов</button><button class="btn" type="button" data-choice="2">Не больше недели, если используется RAID 1</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="NUMA допускает удалённый доступ, но его задержка может отличаться." hidden>
+     <h2 tabindex="-1">После переноса потока на другой NUMA-узел его рабочие данные остались на прежнем. Что изменилось?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Приложение автоматически потеряло доступ ко всем данным</button><button class="btn" type="button" data-choice="1">ОЗУ этого потока стало отдельным виртуальным диском</button><button class="btn" type="button" data-choice="2">Часть обращений проходит по межузловому соединению</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/19.html">К лекции</a>
+   <a class="btn" href="../lessons/20.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

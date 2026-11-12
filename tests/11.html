@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Процессы, защита и виртуальная память — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-10:0ec00c90b627" data-previous-test-key="arch-test:base-10:ba9a3d4074dd">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/11.html">К лекции</a>
+  <h1>Тест. Процессы, защита и виртуальная память</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что отличает процесс от файла программы?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">У процесса есть состояние выполнения и ресурсы</button><button class="btn" type="button" data-choice="1">У процесса всегда своё отдельное физическое ядро</button><button class="btn" type="button" data-choice="2">У файла уже есть контекст процессора</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что сохраняется при переключении выполнения?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только имя программы</button><button class="btn" type="button" data-choice="1">Контекст, включая регистры и адрес продолжения</button><button class="btn" type="button" data-choice="2">Только содержимое накопителя</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Какой адрес используется программой до аппаратного перевода?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Физический адрес на диске</button><button class="btn" type="button" data-choice="1">Порядковый номер файла</button><button class="btn" type="button" data-choice="2">Виртуальный</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Сколько страниц по 4 КиБ помещается в 32-разрядном байтовом адресном пространстве?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">1 048 576</button><button class="btn" type="button" data-choice="1">4096</button><button class="btn" type="button" data-choice="2">65 536</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Что хранит TLB?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Содержимое всех страниц</button><button class="btn" type="button" data-choice="1">Недавние переводы адресов</button><button class="btn" type="button" data-choice="2">Список открытых документов</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Какова возможная нормальная причина исключения страницы?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Память обязательно физически повреждена</button><button class="btn" type="button" data-choice="1">Клавиатура потеряла питание</button><button class="btn" type="button" data-choice="2">Нужную страницу ещё предстоит загрузить</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Смещение равно 8. Физический адрес равен 7 × 4096 + 8." hidden>
+     <h2 tabindex="-1">Виртуальный адрес 8200, страница 4096 байт, страница 2 отображается в кадр 7. Каков физический адрес?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">28680</button><button class="btn" type="button" data-choice="1">28672</button><button class="btn" type="button" data-choice="2">32776</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="Промах TLB сообщает об отсутствии кэшированного перевода, а присутствие страницы проверяют отдельно." hidden>
+     <h2 tabindex="-1">В TLB нет перевода, но страница уже присутствует в памяти. Что произойдёт?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Обязательно будет чтение страницы с накопителя</button><button class="btn" type="button" data-choice="1">Перевод можно получить из таблицы страниц</button><button class="btn" type="button" data-choice="2">ОС завершит процесс из-за нарушения прав</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Завершение ожидания даёт возможность исполняться, выбор момента делает планировщик." hidden>
+     <h2 tabindex="-1">Поток ждёт завершения чтения. Как изменится его состояние после получения данных?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Сразу в выполняемое независимо от планировщика</button><button class="btn" type="button" data-choice="1">Из готового в заблокированное</button><button class="btn" type="button" data-choice="2">Из заблокированного в готовое</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/11.html">К лекции</a>
+   <a class="btn" href="../lessons/12.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!doctype html><html lang="ru" data-theme="white"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Курс по архитектуре вычислительных систем по русским изданиям учебников. Компоненты ПК, диагностика и виртуализация."><title>Тест. Как измерить и повысить производительность — Архитектура систем</title><script src="../scripts/theme.js"></script>
+<link rel="stylesheet" href="../styles/site.css">
+<script src="../scripts/site.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../index.html" aria-label="Архитектура систем — главная">
+      <svg class="brand-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect x="5" y="5" width="22" height="22" rx="5" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M11 22l5-12 5 12m-8.5-3.5h7M11 2v3m10-3v3M11 27v3m10-3v3M2 11h3m-3 10h3m22-10h3m-3 10h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Архитектура систем
+    </a>
+    <nav class="nav" aria-label="Настройки">
+      <button class="btn" id="settings" type="button">Настройки</button>
+    </nav>
+  </div>
+</header>
+<main class="wrap shell" id="main-content">
+<article class="lesson-view" data-test-key="arch-test:base-9:d40e45cd9c99" data-previous-test-key="arch-test:base-9:5917fde05730">
+ <header class="reader-head">
+  <a class="back-link" href="../lessons/10.html">К лекции</a>
+  <h1>Тест. Как измерить и повысить производительность</h1>
+ </header>
+ <div class="lesson-body">
+  <noscript>Для прохождения теста включите JavaScript.</noscript>
+  <p data-test-progress></p>
+  <section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Что измеряет задержка операции?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Время от начала операции до результата</button><button class="btn" type="button" data-choice="1">Число операций за секунду</button><button class="btn" type="button" data-choice="2">Количество запущенных приложений</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Без конвейера чтение регистров занимает 5 нс, работа АЛУ — 10 нс, запись — 5 нс. Какова максимальная пропускная способность такого тракта?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">100 миллионов операций в секунду</button><button class="btn" type="button" data-choice="1">50 миллионов операций в секунду</button><button class="btn" type="button" data-choice="2">200 миллионов операций в секунду</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Зачем профилировать приложение перед оптимизацией?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Заменить проверку правильности</button><button class="btn" type="button" data-choice="1">Получить более высокий тактовый сигнал</button><button class="btn" type="button" data-choice="2">Выяснить, какие этапы занимают больше всего времени</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" hidden>
+     <h2 tabindex="-1">Как сравнивать две версии корректно?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">В одинаковых условиях и на одинаковой задаче</button><button class="btn" type="button" data-choice="1">На разных файлах и разных настройках</button><button class="btn" type="button" data-choice="2">По одному случайному запуску</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" hidden>
+     <h2 tabindex="-1">Обработка занимает 8 с из 12 с. Что даст двукратное ускорение обработки?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">6 с на всю задачу</button><button class="btn" type="button" data-choice="1">8 с на всю задачу</button><button class="btn" type="button" data-choice="2">4 с на всю задачу</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" hidden>
+     <h2 tabindex="-1">Чем ограничено ускорение, если ускоряется только часть задачи?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только ёмкостью накопителя</button><button class="btn" type="button" data-choice="1">Только частотой монитора</button><button class="btn" type="button" data-choice="2">Временем неизменившейся части</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="0" data-explanation="Неизменная часть занимает 4 с, ускоренная часть 2 с." hidden>
+     <h2 tabindex="-1">Время задачи 10 с, из них 6 с можно ускорить втрое. Чему равно новое время задачи?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">6 с</button><button class="btn" type="button" data-choice="1">4 с</button><button class="btn" type="button" data-choice="2">3,33 с</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="1" data-explanation="По измерениям этапов можно установить, какой из них ограничивает весь экспорт." hidden>
+     <h2 tabindex="-1">Время вычислений сократилось, но экспорт файла почти не ускорился. Что измерить следующим?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Только частоту CPU после выполнения</button><button class="btn" type="button" data-choice="1">Сколько времени отдельно занимают чтение, обработка и запись</button><button class="btn" type="button" data-choice="2">Только размер итогового файла</button></div>
+     <p role="status" data-feedback></p>
+    </section><section class="test-question" data-correct="2" data-explanation="Размер данных влияет на объём работы и поведение кэша." hidden>
+     <h2 tabindex="-1">Две версии программы дали разные результаты на файлах разного размера. Что нужно для корректного сравнения?</h2>
+     <div class="test-options"><button class="btn" type="button" data-choice="0">Сравнить средние времена прежних запусков без новых измерений</button><button class="btn" type="button" data-choice="1">Сравнить только пиковую загрузку CPU</button><button class="btn" type="button" data-choice="2">Прогнать обе версии на одинаковых данных и повторить замеры</button></div>
+     <p role="status" data-feedback></p>
+    </section>
+  <p data-test-storage hidden>Браузер не разрешил сохранить прогресс.</p>
+  <p data-test-result role="status" tabindex="-1"></p>
+  <button class="btn primary" type="button" data-test-next hidden>Следующий вопрос</button>
+  <nav class="lesson-pagination">
+   <a class="btn" href="../lessons/10.html">К лекции</a>
+   <a class="btn" href="../lessons/11.html">Следующая лекция</a>
+  </nav>
+ </div></article>
+</main>
+<footer><div class="wrap">Архитектура вычислительных систем</div></footer>
+<dialog id="appearance" aria-labelledby="appearance-title"><div class="dialogtop"><h2 id="appearance-title">Настройки</h2><form method="dialog"><button class="btn" aria-label="Закрыть настройки">✕</button></form></div>
+<label for="theme-select" class="theme-label">Тема оформления</label>
+<select id="theme-select" aria-describedby="theme-help">
+  <option value="white">Белая</option>
+  <option value="dark">Тёмная</option>
+  <option value="blue">Голубая</option>
+  <option value="contrast">Контрастная</option>
+  <option value="dead-by-daylight">Dead by Daylight</option>
+</select>
+<p class="theme-help" id="theme-help">Выбранная тема сохранится в этом браузере.</p>
+</dialog>
+
+<script src="../scripts/test.js" defer></script>
+</body>
+</html>
